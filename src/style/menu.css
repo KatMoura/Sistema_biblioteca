@@ -1,0 +1,23 @@
+select {
+    color: #C4A300
+    ;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+div {
+    color: #C4A300;
+}
+
+menu{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+option{
+    color: #000000;
+    background-color: #e5e5e5;
+    
+}
