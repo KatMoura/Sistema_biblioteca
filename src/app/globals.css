@@ -8,7 +8,6 @@ body {
   color: var(--foreground);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
 menu {
@@ -18,9 +17,41 @@ menu {
   background-color: #f1f1f1;
 }
 
+option {
+  background-color: var(--background);
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #eeeeee2c;
+    --background: #eeeeee4c;
     --foreground: #C4A300;
+  }  
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    margin: 0 auto;
+    width: 450px;
+    height: 570px;
   }
+
+  form{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    width: 100px;
+    height: 100px;
+  }
+
+  input, select, label{
+    display: flex;
+    position: relative;
+    left: 80px;
+    width: 20%;
+    height: 20px;
+  }
+
+  
+  
 }
